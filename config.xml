@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Your App</name>
+    <description>
+        Your App description
+    </description>
+    <author email="youremail@example.com" href="http://example.com">
+        Your Name
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <engine name="ios" spec="^4.4.0" />
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+    <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
+    <engine name="android" spec="~6.2.3" />
+</widget>

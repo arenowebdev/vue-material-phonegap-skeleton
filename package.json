@@ -1,0 +1,55 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm-run-all --parallel watch serve",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "prepare": "cordova platform add",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "serve": "phonegap serve --port 3000",
+        "ios": "cordova run ios",
+        "android": "cordova run android"
+    },
+    "author": "David Mosher",
+    "license": "ISC",
+    "devDependencies": {
+        "axios": "^0.16.2",
+        "cordova": "^7.0.1",
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-geolocation": "~2.4.3",
+        "cordova-plugin-splashscreen": "~4.0.3",
+        "cross-env": "^5.0.1",
+        "fastclick": "^1.0.6",
+        "geolib": "^2.0.22",
+        "laravel-mix": "^1.2.2",
+        "lodash": "^4.17.4",
+        "material-design-icons": "^3.0.1",
+        "npm-run-all": "^4.0.2",
+        "phonegap": "^6.5.2",
+        "vue": "^2.4.1",
+        "vue-material": "^0.7.4",
+        "vue-resource": "^1.3.4",
+        "vue-router": "^2.7.0",
+        "vuex": "^2.3.1"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-splashscreen": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-splashscreen": "^4.0.3"
+    }
+}
